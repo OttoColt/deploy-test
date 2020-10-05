@@ -84,8 +84,8 @@
                     <commitDevelopmentVersionAtStart>false</commitDevelopmentVersionAtStart>
 
                     <!-- Execute mvn verify before release -->
-                    <preReleaseGoals>test verify</preReleaseGoals>
-                    <preHotfixGoals>verify</preHotfixGoals>
+<!--                    <preReleaseGoals>test verify</preReleaseGoals>-->
+<!--                    <preHotfixGoals>verify</preHotfixGoals>-->
 
                     <!-- Configure branches -->
                     <gitFlowConfig>
