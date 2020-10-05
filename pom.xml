@@ -74,6 +74,7 @@
                         <productionBranch>master</productionBranch>
                         <!-- default is develop, but we use development -->
                         <developmentBranch>develop</developmentBranch>
+                        <versionTagPrefix>ver-</versionTagPrefix>
                     </gitFlowConfig>
                 </configuration>
             </plugin>
