@@ -10,7 +10,7 @@
     </parent>
     <groupId>ru</groupId>
     <artifactId>deploy-test</artifactId>
-    <version>0.0.5-SNAPSHOT</version>
+    <version>0.0.5</version>
     <name>deploy-test</name>
     <description>Demo project for Spring Boot</description>
 
