@@ -48,39 +48,31 @@
     <build>
         <finalName>deploy-test</finalName>
         <plugins>
-<!--            <plugin>-->
-<!--                <groupId>com.amashchenko.maven.plugin</groupId>-->
-<!--                <artifactId>gitflow-maven-plugin</artifactId>-->
-<!--                <version>1.14.0</version>-->
-<!--                <configuration>-->
-<!--                    <mvnExecutable>./mvnw</mvnExecutable>-->
-<!--                    <pushRemote>true</pushRemote>-->
-
-<!--                    &lt;!&ndash; Set to true to immediately bump the development version when creating a release branch &ndash;&gt;-->
-<!--                    <commitDevelopmentVersionAtStart>false</commitDevelopmentVersionAtStart>-->
-
-
-<!--                    &lt;!&ndash; Execute mvn verify before release &ndash;&gt;-->
-<!--                    <preReleaseGoals>verify</preReleaseGoals>-->
-<!--                    <preHotfixGoals>verify</preHotfixGoals>-->
-
-<!--                    &lt;!&ndash; Configure branches &ndash;&gt;-->
-<!--                    <gitFlowConfig>-->
-<!--                        <productionBranch>master</productionBranch>-->
-<!--                        <developmentBranch>develop</developmentBranch>-->
-<!--                        <versionTagPrefix>ver-</versionTagPrefix>-->
-<!--                    </gitFlowConfig>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>3.0.0-M1</version>
+                <groupId>com.amashchenko.maven.plugin</groupId>
+                <artifactId>gitflow-maven-plugin</artifactId>
+                <version>1.14.0</version>
                 <configuration>
-                    <tagNameFormat>ver-@{project.version}</tagNameFormat>
-                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <mvnExecutable>./mvnw</mvnExecutable>
+                    <pushRemote>true</pushRemote>
+                    <versionsForceUpdate>true</versionsForceUpdate>
+
+                    <!-- Set to true to immediately bump the development version when creating a release branch -->
+                    <commitDevelopmentVersionAtStart>false</commitDevelopmentVersionAtStart>
+
+                    <!-- Execute mvn verify before release -->
+                    <preReleaseGoals>test verify</preReleaseGoals>
+                    <preHotfixGoals>verify</preHotfixGoals>
+
+                    <!-- Configure branches -->
+                    <gitFlowConfig>
+                        <productionBranch>master</productionBranch>
+                        <developmentBranch>develop</developmentBranch>
+                        <versionTagPrefix>ver-</versionTagPrefix>
+                    </gitFlowConfig>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
