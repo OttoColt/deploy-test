@@ -40,10 +40,6 @@
             </exclusions>
         </dependency>
     </dependencies>
-    <scm>
-        <connection>scm:git:https://github.com/OttoColt/deploy-test.git</connection>
-      <tag>ver-2020R10.0.6</tag>
-  </scm>
 
     <build>
         <finalName>deploy-test</finalName>
