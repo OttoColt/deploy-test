@@ -45,29 +45,40 @@
     <build>
         <finalName>deploy-test</finalName>
         <plugins>
+<!--            <plugin>-->
+<!--                <groupId>com.amashchenko.maven.plugin</groupId>-->
+<!--                <artifactId>gitflow-maven-plugin</artifactId>-->
+<!--                <version>1.14.0</version>-->
+<!--                <configuration>-->
+<!--                    <mvnExecutable>./mvnw</mvnExecutable>-->
+<!--                    <pushRemote>true</pushRemote>-->
+
+<!--                    &lt;!&ndash; Set to true to immediately bump the development version when creating a release branch &ndash;&gt;-->
+<!--                    <commitDevelopmentVersionAtStart>false</commitDevelopmentVersionAtStart>-->
+
+
+<!--                    &lt;!&ndash; Execute mvn verify before release &ndash;&gt;-->
+<!--                    <preReleaseGoals>verify</preReleaseGoals>-->
+<!--                    <preHotfixGoals>verify</preHotfixGoals>-->
+
+<!--                    &lt;!&ndash; Configure branches &ndash;&gt;-->
+<!--                    <gitFlowConfig>-->
+<!--                        <productionBranch>master</productionBranch>-->
+<!--                        <developmentBranch>develop</developmentBranch>-->
+<!--                        <versionTagPrefix>ver-</versionTagPrefix>-->
+<!--                    </gitFlowConfig>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
             <plugin>
-                <groupId>com.amashchenko.maven.plugin</groupId>
-                <artifactId>gitflow-maven-plugin</artifactId>
-                <version>1.14.0</version>
+                <groupId>external.atlassian.jgitflow</groupId>
+                <artifactId>jgitflow-maven-plugin</artifactId>
+                <version>1.0-m5.1</version>
                 <configuration>
-                    <!-- We use maven wrapper in all our projects instead of a local maven installation -->
-                    <mvnExecutable>./mvnw</mvnExecutable>
-
-                    <!-- Don’t push to the git remote. Very useful for testing locally -->
-                    <pushRemote>true</pushRemote>
-
-                    <!-- Set to true to immediately bump the development version when creating a release branch -->
-                    <commitDevelopmentVersionAtStart>false</commitDevelopmentVersionAtStart>
-
-                    <!-- Execute mvn verify before release -->
-                    <preReleaseGoals>verify</preReleaseGoals>
-                    <preHotfixGoals>verify</preHotfixGoals>
-
-                    <!-- Configure branches -->
-                    <gitFlowConfig>
-                        <productionBranch>master</productionBranch>
-                        <developmentBranch>develop</developmentBranch>
-                    </gitFlowConfig>
+                    <flowInitContext>
+                        <masterBranchName>master</masterBranchName>
+                        <developBranchName>develop</developBranchName>
+                        <versionTagPrefix>ver-</versionTagPrefix>
+                    </flowInitContext>
                 </configuration>
             </plugin>
             <plugin>
