@@ -7,6 +7,11 @@
         <version>2.3.2.RELEASE</version>
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
+
+    <modules>
+        <module>demo</module>
+    </modules>
+
     <groupId>ru</groupId>
     <artifactId>deploy-test</artifactId>
     <version>2020R13.0.6-SNAPSHOT</version>
