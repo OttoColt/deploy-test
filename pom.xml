@@ -10,7 +10,7 @@
 
     <groupId>ru</groupId>
     <artifactId>deploy-test</artifactId>
-    <version>2020R13.0.6</version>
+    <version>2020R14.0.6-SNAPSHOT</version>
     <name>deploy-test</name>
     <description>Demo project for Spring Boot</description>
 
