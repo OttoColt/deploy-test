@@ -10,7 +10,7 @@
 
     <groupId>ru</groupId>
     <artifactId>deploy-test</artifactId>
-    <version>2020R13.0.6-SNAPSHOT</version>
+    <version>2020R13.0.6</version>
     <name>deploy-test</name>
     <description>Demo project for Spring Boot</description>
 
@@ -84,8 +84,8 @@
                     <commitDevelopmentVersionAtStart>false</commitDevelopmentVersionAtStart>
 
                     <!-- Execute mvn verify before release -->
-                    <preReleaseGoals>test verify</preReleaseGoals>
-                    <preHotfixGoals>verify</preHotfixGoals>
+<!--                    <preReleaseGoals>test verify</preReleaseGoals>-->
+<!--                    <preHotfixGoals>verify</preHotfixGoals>-->
 
                     <!-- Configure branches -->
                     <gitFlowConfig>
