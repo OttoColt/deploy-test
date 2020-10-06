@@ -81,7 +81,7 @@
                 <version>1.14.0</version>
                 <configuration>
 <!--                    <mvnExecutable>./mvnw</mvnExecutable>-->
-                    <pushRemote>true</pushRemote>
+<!--                    <pushRemote>true</pushRemote>-->
                     <versionsForceUpdate>true</versionsForceUpdate>
                     <keepBranch>true</keepBranch>
 
