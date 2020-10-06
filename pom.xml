@@ -85,7 +85,7 @@
                     <versionsForceUpdate>true</versionsForceUpdate>
 
                     <!-- Set to true to immediately bump the development version when creating a release branch -->
-                    <commitDevelopmentVersionAtStart>false</commitDevelopmentVersionAtStart>
+                    <commitDevelopmentVersionAtStart>true</commitDevelopmentVersionAtStart>
 
                     <!-- Execute mvn verify before release -->
 <!--                    <preReleaseGoals>test verify</preReleaseGoals>-->
