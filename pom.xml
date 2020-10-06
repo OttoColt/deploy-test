@@ -83,6 +83,8 @@
                     <mvnExecutable>./mvnw</mvnExecutable>
                     <pushRemote>true</pushRemote>
                     <versionsForceUpdate>true</versionsForceUpdate>
+                    <keepBranch>true</keepBranch>
+                    <verbose>true</verbose>
 
                     <!-- Set to true to immediately bump the development version when creating a release branch -->
                     <commitDevelopmentVersionAtStart>true</commitDevelopmentVersionAtStart>
