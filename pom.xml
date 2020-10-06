@@ -10,7 +10,7 @@
 
     <groupId>ru</groupId>
     <artifactId>deploy-test</artifactId>
-    <version>2020R16.0.7</version>
+    <version>2020R17.0.7-SNAPSHOT</version>
     <name>deploy-test</name>
     <description>Demo project for Spring Boot</description>
 
@@ -44,7 +44,7 @@
             <dependency>
                 <groupId>com.example</groupId>
                 <artifactId>demo</artifactId>
-                <version>2020R16.0.7</version>
+                <version>2020R17.0.7-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
