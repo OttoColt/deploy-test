@@ -9,7 +9,7 @@
 
     <groupId>ru</groupId>
     <artifactId>deploy-test</artifactId>
-    <version>2020R18.0.7</version>
+    <version>2020R19.0.7-SNAPSHOT</version>
     <name>deploy-test</name>
     <description>Demo project for Spring Boot</description>
 
@@ -43,7 +43,7 @@
             <dependency>
                 <groupId>com.example</groupId>
                 <artifactId>demo</artifactId>
-                <version>2020R18.0.7</version>
+                <version>2020R19.0.7-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -72,7 +72,7 @@
     </dependencyManagement>
     <scm>
         <connection>scm:git:https://github.com/OttoColt/deploy-test.git</connection>
-      <tag>v-2020R18.0.7</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <build>
